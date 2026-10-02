@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crunchychud Privacy Policy</title>
+<meta name="description" content="How the Crunchychud browser extension handles your data.">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #fcfcfb;
+    --text: #0b0b0b;
+    --text-2: #52514e;
+    --border: #e3e2dd;
+    --accent: #c4501f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121211;
+      --text: #ffffff;
+      --text-2: #c3c2b7;
+      --border: #2e2e2c;
+      --accent: #eb6834;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121211;
+    --text: #ffffff;
+    --text-2: #c3c2b7;
+    --border: #2e2e2c;
+    --accent: #eb6834;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 12px; flex: none;
+    background:
+      linear-gradient(#fff, #fff) 11px 24px / 5px 10px no-repeat,
+      linear-gradient(#fff, #fff) 20px 17px / 5px 17px no-repeat,
+      linear-gradient(#fff, #fff) 29px 10px / 5px 24px no-repeat,
+      #eb6834;
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+  .updated { color: var(--text-2); margin: 0 0 32px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { color: var(--text-2); }
+  strong { color: var(--text); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .summary {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 24px 0;
+  }
+  .summary p { margin: 0; color: var(--text); }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 14px; color: var(--text-2); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="mark" aria-hidden="true"></span>
+    <h1>Crunchychud Privacy Policy</h1>
+  </header>
+  <p class="updated">Effective October 1, 2026</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Crunchychud reads your Crunchyroll watch history so it can show you statistics about it. That
+    data stays in your browser. It is never sent to the developer or to anyone else, never sold, and never used for
+    advertising.</p>
+  </div>
+
+  <h2>What Crunchychud is</h2>
+  <p>Crunchychud is a Chrome extension that turns your Crunchyroll watch history into statistics such as hours watched, top
+  shows, genres and viewing patterns. It is an independent project and is not affiliated with, endorsed by, or connected
+  to Crunchyroll.</p>
+
+  <h2>Data the extension accesses</h2>
+  <p>Only when you click <strong>Sync</strong>, the extension opens crunchyroll.com in a background tab and uses your
+  existing, logged-in Crunchyroll session to request:</p>
+  <ul>
+    <li><strong>Your watch history:</strong> which episodes and movies you played, when, and how far you got, along with
+    each title's name, season, episode number, length, genres, audio language and thumbnail image address.</li>
+    <li><strong>Episode lists</strong> for the seasons you watched recently, so it can show which episode comes next and
+    which shows you haven't finished.</li>
+    <li><strong>Your Crunchyroll account ID</strong>, which Crunchyroll's own website uses in the address of these
+    requests.</li>
+  </ul>
+  <p>To make these requests the extension reads the short-lived access token that Crunchyroll's website already uses in
+  that tab. The token is held in memory only for the duration of the sync, is used only to contact crunchyroll.com, and
+  is never stored or sent anywhere else.</p>
+  <p>Crunchychud <strong>never</strong> sees or asks for your Crunchyroll password, payment details or email address.
+  On Crunchyroll tabs you open yourself, the extension does nothing.</p>
+
+  <h2>Where your data is stored</h2>
+  <p>Your synced history, the statistics computed from it, and the optional name you type for share images are saved with
+  Chrome's extension storage <strong>on your own device</strong>. There is no Crunchychud server and no account.</p>
+
+  <h2>Who your data is shared with</h2>
+  <ul>
+    <li><strong>No one.</strong> The extension contains no analytics, tracking, advertising or third-party code, and it
+    does not transmit your data to the developer or any third party.</li>
+    <li>The only network requests it makes go to <strong>crunchyroll.com</strong>, to fetch your history, episode lists
+    and show thumbnails.</li>
+    <li><strong>Share images</strong> are created on your device. They only leave it if you copy, download or share one
+    yourself, and then they go only where you choose to send them.</li>
+  </ul>
+
+  <h2>How your data is used</h2>
+  <p>Solely to show you statistics about your own viewing inside the extension and in share images you choose to create.
+  Crunchychud does not sell your data, does not use or transfer it for purposes unrelated to that single purpose, and does
+  not use or transfer it to determine creditworthiness or for lending purposes.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li>Click <strong>Delete my data</strong> at the bottom of the Crunchychud stats page to erase everything the extension
+    has stored.</li>
+    <li>Uninstalling the extension also removes all of its stored data from your browser.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Crunchychud is not directed at children under 13 and does not knowingly collect personal information from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If a future version handles data differently (for example, an optional feature for sharing stats with friends
+  online), this policy will be updated before that version is released and the effective date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to <a href="mailto:a.free.humanity@gmail.com">a.free.humanity@gmail.com</a>.</p>
+
+  <footer>Crunchyroll is a trademark of its respective owner. Crunchychud is not affiliated with Crunchyroll.</footer>
+</main>
+</body>
+</html>
